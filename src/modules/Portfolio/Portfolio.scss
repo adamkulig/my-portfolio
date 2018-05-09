@@ -1,0 +1,80 @@
+@import '../../scss/base.scss';
+
+.portfolio {
+  background-image: linear-gradient(to right,darken($color-blue, 15%), darken($color-blue, 25%));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  &__h1 {
+    @include h1Section($color-pearl);
+    @include underline($color-yellow, 2px, 1rem);
+  }
+  &__projects {
+    display: flex;
+    flex-direction: column;
+    @include media('min900') {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  @include media('min900') {
+    width: calc(50% - 2rem);
+  }
+  &:nth-child(odd) {
+    @include media('min900') {
+      margin-right: 2rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    @include boxShadow;
+  }
+  &__text-under-img {
+    @include h4Section($color-pearl)
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    @include underline($color-yellow, 2px, 1rem); 
+    &__link {
+      margin: 0.2rem 1rem;
+      width: 12rem;
+      padding: 0.3rem 0rem;
+      border-radius: 1rem;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all .3s;
+      &:hover, &:active {
+        letter-spacing: 3px;
+      }
+      &--live {
+        border: $color-blue 1px solid;
+        color: darken($color-blue, 30%);
+        background-color: lighten($color-blue, 20%);
+        &:hover, &:active {
+          color: lighten($color-blue, 20%);
+          background-color: darken($color-blue, 30%);
+        }
+      }
+      &--code {
+        border: $color-green 1px solid;
+        color: darken($color-green, 40%);
+        background-color: lighten($color-green, 10%);
+        &:hover, &:active {
+          color: lighten($color-green, 10%);
+          background-color: darken($color-green, 40%);
+        }
+      }
+    }
+  }
+} 

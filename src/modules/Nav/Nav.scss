@@ -1,0 +1,84 @@
+@import '../../scss/base.scss';
+
+.nav {
+  &__icon {
+    cursor: pointer;
+    padding: 0.5rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 20;
+  }
+
+  &__author {
+    @include absolute(0.5rem, 0.5rem);
+    width: 7rem;
+    height: auto;
+    border-radius: 10rem;
+    border: 2px solid darken($color-blue, 10%);
+  }
+}
+.nav-menu {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(darken($color-blue, 20%), darken($color-blue, 40%));
+  position: fixed;
+  @include flexCenter;
+  align-items: center;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  z-index: 10;
+  
+  &--open {
+    transform: none;
+  }
+
+  &__list {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+      margin: 1rem;
+      padding: 0.5rem 1.5rem;
+      font-size: 2.4rem;
+      @include textShadow;
+      color: $color-pearl;
+      position: relative;
+      transition: all 1s;
+      display: flex;
+      vertical-align: middle;
+      
+      &__icon {
+        margin-right: 1.5rem;
+        color: lighten($color-yellow, 10%);
+        position: relative;
+        top: -3px;
+        &.FaDesktop {top: -1px;}
+        &.FaInfoCircle {top: -2px;}
+      }
+
+      &:hover,
+      &:active {
+        color: $color-yellow;
+        letter-spacing: 3px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        transition: transform .5s ease;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background: $color-green;
+        transform:  scaleX(0);
+      }
+      &:hover:before {
+        transform:  scaleX(1);
+      }
+    }
+  }
+}

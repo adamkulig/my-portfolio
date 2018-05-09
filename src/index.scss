@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext');
+@import './scss/base.scss';
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8px;
+  @include media('portrait') {
+    font-size: 10px;
+  }
+  @include media('min600landscape') {
+    font-size: 10px;
+  }
+  @include media('min600portrait') {
+    font-size: 14px;
+  }
+  @include media('min900') {
+    font-size: 17px;
+  }
+  @include media('min900landscape') {
+    font-size: 14px;
+  }
+  @include media('min1200') {
+    font-size: 18px;
+  }
+}
+
+body {
+  background-color: $color-pearl;
+}
+
+html, body { height: 100%; width: 100%; }
+// test 
+
+
+

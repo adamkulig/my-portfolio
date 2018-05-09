@@ -1,0 +1,64 @@
+@import '../../scss/base.scss';
+@import '../../scss/animations.scss';
+
+.header {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../images/background-big.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  @include flexCenter;
+  padding: 0 15%;
+  flex-direction: column;
+
+  & h1 {
+    color: $color-blue;
+    font-size: 4rem;
+    margin: 7vh 0 1rem 0;
+    @include textShadow;
+    animation: 0.5s bounceIn 0.5s ease backwards;
+    letter-spacing: 2px;
+  }
+
+  & h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 1rem 0 7vh 0;
+    @include textShadow;
+    letter-spacing: 1px;
+        
+    & span:first-child{
+      color: $color-green;
+      animation: 0.5s bounceIn 1.2s ease backwards;
+      display: inline-block;
+      backface-visibility: hidden;
+    }
+    & span:last-child{
+      color: $color-yellow;
+      animation: 0.5s bounceIn 1.9s ease backwards;
+      display: inline-block;
+      backface-visibility: hidden;
+    }
+  }
+
+  &__button-link {
+    border: $color-blue 2px solid;
+    color: $color-yellow;
+    padding: 0.5rem 0rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    @include textShadow;
+    width: 20rem;
+    transition: all .3s;
+    animation: 
+      0.5s bounceIn 2.6s ease backwards, 
+      4.5s shake 4.5s infinite;
+    
+    &:hover, &:active {
+      background-color: darken($color-blue, 20%);
+      border: darken($color-blue, 20%) 2px solid;
+      color: lighten($color-yellow, 10%);
+      letter-spacing: 2px;
+    }
+  }
+}
+

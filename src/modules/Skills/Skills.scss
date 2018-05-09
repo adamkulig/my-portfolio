@@ -1,0 +1,36 @@
+@import '../../scss/base.scss';
+
+.skills {
+  background-image: linear-gradient(to right, $color-pearl, darken($color-pearl, 20%));
+  padding: 3rem 10%;
+
+  &__h1 {
+    @include h1Section($color-blue);
+    @include underline($color-blue, 2px, 1rem);
+  }
+
+  h2 {
+    @include h2Section($color-blue);
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__img {
+      height: 7rem;
+      width: auto;
+      &.HTML5_logo {
+        height: 6.7rem;
+      }
+      &.Sass_logo {
+        height: 5.8rem;
+        margin-left: 3rem;
+      }
+      &.React_logo {
+        height: 5.8rem;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
