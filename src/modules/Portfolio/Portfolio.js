@@ -4,6 +4,7 @@ import './Portfolio.scss';
 import { PortfolioItem } from './PortfolioItem';
 import piggame from '../../images/piggame.png';
 import todo from '../../images/todosoon.png';
+import { piggame_live_link, piggame_live_code } from '../../links/links';
 
 export const Portfolio = () => {
   return (
@@ -16,8 +17,8 @@ export const Portfolio = () => {
           <PortfolioItem 
             src={piggame}
             alt='piggame screen'
-            linkToLive='#'
-            linkToCode='#'
+            linkToLive={piggame_live_link}
+            linkToCode={piggame_live_code}
             text='React Pig Game'/>
           <PortfolioItem 
             src={todo}
