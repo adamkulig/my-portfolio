@@ -2,9 +2,9 @@ import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import './Portfolio.scss';
 import { PortfolioItem } from './PortfolioItem';
-import piggame from '../../images/piggame.png';
+import piggame from '../../images/piggame2.png';
 import todo from '../../images/todosoon.png';
-import { piggame_live_link, piggame_live_code } from '../../links/links';
+import { piggame_link_live, piggame_link_code, todo_link_live, todo_link_code } from '../../links/links';
 
 export const Portfolio = () => {
   return (
@@ -17,14 +17,14 @@ export const Portfolio = () => {
           <PortfolioItem 
             src={piggame}
             alt='piggame screen'
-            linkToLive={piggame_live_link}
-            linkToCode={piggame_live_code}
+            linkToLive={piggame_link_live}
+            linkToCode={piggame_link_code}
             text='React Pig Game'/>
           <PortfolioItem 
             src={todo}
             alt='todo screen'
-            linkToLive='#'
-            linkToCode='#'
+            linkToLive={todo_link_live}
+            linkToCode={todo_link_code}
             text='React To Do'/>
          </div>
       </section>
