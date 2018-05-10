@@ -1,10 +1,10 @@
 {
-  "main.js": "static/js/main.15335dcc.js",
-  "main.js.map": "static/js/main.15335dcc.js.map",
+  "main.js": "static/js/main.1e100691.js",
+  "main.js.map": "static/js/main.1e100691.js.map",
   "static\\media\\React_logo.png": "static/media/React_logo.2b69ab84.png",
   "static\\media\\Redux_logo.png": "static/media/Redux_logo.684c6918.png",
   "static\\media\\Sass_logo.png": "static/media/Sass_logo.d7c3f1bb.png",
   "static\\media\\background-big.jpeg": "static/media/background-big.9efb0b9a.jpeg",
-  "static\\media\\piggame2.png": "static/media/piggame2.dc93b502.png",
-  "static\\media\\todosoon.png": "static/media/todosoon.0884b11a.png"
+  "static\\media\\piggame.png": "static/media/piggame.5ccd2387.png",
+  "static\\media\\todo.png": "static/media/todo.462ddaa2.png"
 }
