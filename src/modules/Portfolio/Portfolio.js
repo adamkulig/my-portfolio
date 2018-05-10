@@ -2,8 +2,8 @@ import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import './Portfolio.scss';
 import { PortfolioItem } from './PortfolioItem';
-import piggame from '../../images/piggame2.png';
-import todo from '../../images/todosoon.png';
+import piggame from '../../images/piggame.png';
+import todo from '../../images/todo.png';
 import { piggame_link_live, piggame_link_code, todo_link_live, todo_link_code } from '../../links/links';
 
 export const Portfolio = () => {
