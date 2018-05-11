@@ -9,7 +9,7 @@
     @include underline($color-blue, 2px, 1rem);
   }
 
-  h2 {
+  &__h2 {
     @include h2Section($color-blue);
   }
 
@@ -17,6 +17,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    &:last-of-type {
+      @include underline($color-blue, 2px, 1rem);
+      margin-bottom: 2rem;
+    }
     &__img {
       height: 7rem;
       width: auto;
@@ -31,6 +35,24 @@
         height: 5.8rem;
         margin-left: 1.5rem;
       }
+    }
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    @include media(min900) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      &__detail {
+        flex-basis: 50%;
+        padding: 0 2rem;
+      }
+    }
+    &__h3 {
+      @include h3Section($color-blue);
+    }
+    &__p {
+      @include pSection($color-almost-black);
     }
   }
 }
