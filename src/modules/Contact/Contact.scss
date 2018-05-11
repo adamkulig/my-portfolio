@@ -1,15 +1,15 @@
 @import '../../scss/base.scss';
 
 .contact {
-  background-image: linear-gradient(to right, $color-pearl, darken($color-pearl, 20%));
+  background-color: $c-background-secondary;
 
   &__h1 {
-    @include h1Section(darken($color-almost-black, 10%));
-    @include underline($color-blue, 2px, 1rem);
+    @include h1Section($c-background-text);
+    @include underline($c-primary-dark, 1rem);
   }
 
   &__message {
-    @include h3Section(darken($color-almost-black, 10%));
+    @include h3Section($c-background-text);
   }
 
   &__contacts {
@@ -18,9 +18,10 @@
     text-align: center;
     &__single {
       margin: 0.5rem 0;
-      color: darken($color-almost-black, 10%);
-      font-size: 1.6rem;
+      color: $c-background-text;
+      font-size: 1.8rem;
       word-spacing: 1px;
+      font-weight: bold;
       &__icon {
         margin-right: 1rem;
         font-size: 2rem;
@@ -34,7 +35,7 @@
     justify-content: center;
     &__single {
       margin: 1rem 0;
-      color: darken($color-almost-black, 10%);
+      color: $c-background-text;
       font-size: 3rem;
       word-spacing: 1px;
       &__icon {
@@ -43,26 +44,26 @@
         width: 4rem;
         height: 4rem;
         margin: 0 2rem;
-        transition: 0.3s;
+        transition: 0.2s;
         &:hover, &:active {
           transform: scale(1.1);
         }
         &.FaGithub {
-          color: $color-white;
-          background-color: darken($color-almost-black, 10%);
+          color: $c-background;
+          background-color: $c-background-text;
           
         }
         &.FaFacebook {
-          color: $color-white;
+          color: $c-background;
           background-color: #3b5998;
         }
         &.FaAngleDoubleUp {
-          color: darken($color-almost-black, 10%);
-          border: 2px solid darken($color-almost-black, 10%);
-          background-color: $color-white;
+          color: $c-background-text;
+          border: 2px solid $c-background-text;
+          background-color: $c-background;
           &:hover, &:active {
-            background-color: darken($color-almost-black, 10%);
-            color: $color-white;
+            background-color: $c-background-text;
+            color: $c-background;
           }
         }
       }

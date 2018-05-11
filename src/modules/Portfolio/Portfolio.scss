@@ -1,14 +1,14 @@
 @import '../../scss/base.scss';
 
 .portfolio {
-  background-image: linear-gradient(to right,darken($color-blue, 15%), darken($color-blue, 25%));
+  background-color: $c-background-primary;
   display: flex;
   flex-direction: column;
   justify-content: center;
   
   &__h1 {
-    @include h1Section($color-pearl);
-    @include underline($color-yellow, 2px, 1rem);
+    @include h1Section($c-background-text);
+    @include underline($c-primary-dark, 1rem);
   }
   &__projects {
     display: flex;
@@ -37,17 +37,17 @@
     @include boxShadow;
   }
   &__text-under-img {
-    @include h4Section($color-pearl)
+    @include h3Section($c-background-text)
   }
   &__buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-    @include underline($color-yellow, 2px, 1rem); 
+    @include underline($c-primary-dark, 1rem); 
     &__link {
       margin: 0.2rem 1rem;
       width: 12rem;
-      padding: 0.3rem 0rem;
+      padding: 0.5rem 0rem;
       border-radius: 1rem;
       font-size: 1.5rem;
       letter-spacing: 2px;
@@ -57,23 +57,20 @@
       &:hover, &:active {
         letter-spacing: 3px;
       }
-      &--live {
-        border: $color-blue 1px solid;
-        color: darken($color-blue, 30%);
-        background-color: lighten($color-blue, 20%);
+      &--code {
+        color: $c-primary-text;
+        background-color: $c-primary;
         &:hover, &:active {
-          color: lighten($color-blue, 20%);
-          background-color: darken($color-blue, 30%);
+          background-color: $c-primary-dark;
           letter-spacing: 3px;
         }
       }
-      &--code {
-        border: $color-green 1px solid;
-        color: darken($color-green, 40%);
-        background-color: lighten($color-green, 10%);
+      &--live {
+        color: $c-secondary-text;
+        background-color: $c-secondary;
         &:hover, &:active {
-          color: lighten($color-green, 10%);
-          background-color: darken($color-green, 40%);
+          color: $c-secondary-text;
+          background-color: $c-secondary-dark;
           letter-spacing: 3px;
         }
       }

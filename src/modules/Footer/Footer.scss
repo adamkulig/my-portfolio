@@ -1,7 +1,7 @@
 @import '../../scss/base.scss';
 
 .footer {
-  background-color: $color-almost-black;
+  background-color: $c-primary-dark;
   display: flex;
   padding: 0.1rem 0;
   align-items: center;
@@ -9,6 +9,6 @@
   &__text {
     font-size: 1.5rem;
     padding: 0.5rem;
-    color: $color-yellow;
+    color: $c-primary-dark-text;
   }
 }
