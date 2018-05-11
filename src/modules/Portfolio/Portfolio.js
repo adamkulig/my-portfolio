@@ -3,7 +3,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import './Portfolio.scss';
 import { PortfolioItem } from './PortfolioItem';
 import piggame from '../../images/piggame.png';
-import todo from '../../images/todo.png';
+import todoapp from '../../images/todoapp.png';
 import { piggame_link_live, piggame_link_code, todo_link_live, todo_link_code } from '../../links/links';
 
 export const Portfolio = () => {
@@ -21,7 +21,7 @@ export const Portfolio = () => {
             linkToCode={piggame_link_code}
             text='React Pig Game'/>
           <PortfolioItem 
-            src={todo}
+            src={todoapp}
             alt='todo screen'
             linkToLive={todo_link_live}
             linkToCode={todo_link_code}
