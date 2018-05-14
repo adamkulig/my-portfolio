@@ -10,7 +10,7 @@
   }
 
   &__h2 {
-    @include h2Section($c-primary);
+    @include h2Section($c-background-text);
   }
 
   &__logos {

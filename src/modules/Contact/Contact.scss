@@ -36,14 +36,8 @@
     &__single {
       margin: 1rem 0;
       color: $c-background-text;
-      font-size: 3rem;
-      word-spacing: 1px;
       &__icon {
-        border-radius: 0.5rem;
-        @include flexCenter;
-        width: 4rem;
-        height: 4rem;
-        margin: 0 2rem;
+        @include iconParams;
         transition: 0.2s;
         &:hover, &:active {
           transform: scale(1.1);
