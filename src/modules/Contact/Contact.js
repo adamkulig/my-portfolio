@@ -34,6 +34,8 @@ export const Contact = () => {
             icon={<FaFacebook />} 
             classIcon='FaFacebook'
             link={fb_link}/>
+        </div>
+        <div className='contact__links'>
           <SingleLink
             icon={<FaAngleDoubleUp />} 
             classIcon='FaAngleDoubleUp'

@@ -1,19 +1,15 @@
 @import '../../scss/base.scss';
 
 .aboutme {
-  background-image: linear-gradient(to right,darken($color-green, 20%), darken($color-green, 30%));
+  background-color: $c-background-primary;
 
   h1 {
-    @include h1Section($color-pearl);
-    @include underline($color-yellow, 2px, 1rem);
+    @include h1Section($c-background-text);
+    @include underline($c-primary-dark, 1rem);
   }
 
   p {
-    @include pSection($color-pearl);
-    &:nth-last-child(2){
-      margin-bottom: 1.5rem;
-      @include underline($color-yellow, 2px, 1rem)
-    }
+    @include pSection($c-background-text);
   }
 }
 

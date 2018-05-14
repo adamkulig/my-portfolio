@@ -37,7 +37,7 @@ export const Skills = () => {
           </div>
           <div className='skills__details__detail'>
             <h3 className='skills__details__h3'>RWD</h3>
-            <p className='skills__details__p'>I make websites and applications fully responive.</p>
+            <p className='skills__details__p'>I make websites and applications fully responsive.</p>
           </div>
           <div className='skills__details__detail'>
             <h3 className='skills__details__h3'>BEM</h3>

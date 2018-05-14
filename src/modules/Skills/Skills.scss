@@ -1,16 +1,16 @@
 @import '../../scss/base.scss';
 
 .skills {
-  background-image: linear-gradient(to right, $color-pearl, darken($color-pearl, 20%));
+  background-color: $c-background-secondary;
   padding: 3rem 10%;
 
   &__h1 {
-    @include h1Section($color-blue);
-    @include underline($color-blue, 2px, 1rem);
+    @include h1Section($c-background-text);
+    @include underline($c-primary, 1rem);
   }
 
   &__h2 {
-    @include h2Section($color-blue);
+    @include h2Section($c-background-text);
   }
 
   &__logos {
@@ -18,7 +18,7 @@
     justify-content: space-around;
     align-items: center;
     &:last-of-type {
-      @include underline($color-blue, 2px, 1rem);
+      @include underline($c-primary, 1rem);
       margin-bottom: 2rem;
     }
     &__img {
@@ -49,10 +49,10 @@
       }
     }
     &__h3 {
-      @include h3Section($color-blue);
+      @include h3Section($c-primary);
     }
     &__p {
-      @include pSection($color-almost-black);
+      @include pSection($c-background-text);
     }
   }
 }

@@ -4,6 +4,15 @@
   align-items: center;
 }
 
+@mixin iconParams {
+  font-size: 3rem;
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 3rem;
+  @include flexCenter;
+}
+
 @mixin textShadow {
   text-shadow: 1px 2px 3px #000;
 }
@@ -17,7 +26,7 @@
   top: $top;
   left: $left;
 }
-@mixin underline($lineColor, $thickness, $lowered) {
+@mixin underline($lineColor, $lowered) {
     position: relative;
     &:before {
     content: "";
@@ -25,7 +34,7 @@
     left: 0;
     bottom: -$lowered;
     width: 100%;
-    height: $thickness;
+    height: 3px;
     background: $lineColor;
   }
 }
@@ -49,7 +58,7 @@
 }
 
 @mixin h3Section($fontColor) {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   word-spacing: 1px;
   text-align: center;
   margin: 0.5rem 0;
@@ -72,7 +81,7 @@
   margin: 1rem 0;
   color: $fontColor;
   line-height: 2.2rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 //mixin of media queries
