@@ -17,13 +17,13 @@ export const Skills = () => {
           <h1 className='skills__h1'>Skills</h1>
         </a>
         <div>
-          <h2 className='skills__h2'>Good:</h2>
+          <h3 className='skills__h3'>Good</h3>
           <div className='skills__logos'>
             <Logo logo={JS_logo} name='JS_logo'/>
             <Logo logo={HTML5_logo} name='HTML5_logo'/>
             <Logo logo={CSS3_logo} name='CSS3_logo'/>
           </div>
-          <h2 className='skills__h2'>Basic:</h2>
+          <h3 className='skills__h3'>Basic</h3>
           <div className='skills__logos'>
             <Logo logo={React_logo} name='React_logo'/>
             <Logo logo={Sass_logo} name='Sass_logo'/>

@@ -9,7 +9,7 @@
   }
 
   &__message {
-    @include h3Section($c-background-text-light);
+    @include pSection($c-background-text-light);
   }
 
   &__contacts {
@@ -19,7 +19,7 @@
     &__single {
       margin: 0.5rem 0;
       color: $c-background-text-light;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       word-spacing: 1px;
       font-weight: bold;
       &__icon {

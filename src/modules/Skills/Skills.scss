@@ -9,14 +9,15 @@
     @include underline($c-primary-dark, 1rem);
   }
 
-  &__h2 {
-    @include h2Section($c-background-text);
+  &__h3 {
+    @include h3Section($c-background-text-light);
   }
 
   &__logos {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem 5%;
     &:last-of-type {
       @include underline($c-primary-dark, 1rem);
       margin-bottom: 2rem;
