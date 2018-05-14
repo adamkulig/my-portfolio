@@ -23,6 +23,9 @@
 .portfolio-item {
   display: flex;
   flex-direction: column;
+  margin: 1rem 0;
+  background-color: $c-background-secondary;
+  @include boxShadow;
   @include media('min900') {
     max-width: calc(50% - 2rem);
   }
@@ -33,18 +36,19 @@
   }
 
   &__img {
-    width: 100%;
+    margin: 1rem;
+    width: calc(100% - 2rem);
     @include boxShadow;
   }
   &__text-under-img {
-    @include h3Section($c-background-text)
+    @include h3Section($c-background-text-light)
   }
   &__buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-    @include underline($c-primary-dark, 1rem); 
     &__link {
+      @include boxShadow;
       margin: 0.2rem 1rem;
       width: 12rem;
       padding: 0.5rem 0rem;
@@ -69,7 +73,7 @@
         color: $c-secondary-text;
         background-color: $c-secondary;
         &:hover, &:active {
-          color: $c-secondary-text;
+          color: $c-secondary-dark-text;
           background-color: $c-secondary-dark;
           letter-spacing: 3px;
         }

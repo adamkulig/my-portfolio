@@ -14,12 +14,13 @@
 }
 
 @mixin textShadow {
-  text-shadow: 1px 2px 3px #000;
+  text-shadow: 1px 1px 2px rgba(#000,0.5);
 }
 
 @mixin boxShadow {
-  box-shadow: 1px 1px 2px #333;
+  box-shadow: 0rem 0.1rem 0.3rem rgba(#000,0.3);
 }
+
 
 @mixin absolute($top, $left) {
   position: absolute;

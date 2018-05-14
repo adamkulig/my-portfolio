@@ -2,16 +2,16 @@
 @import '../../scss/animations.scss';
 
 .header {
-  background-image: $c-floor-fade, url('../../images/background-big.jpeg');
+  background-image: $c-darken, url('../../images/website-3374825.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 48.5%;
   height: 100vh;
   @include flexCenter;
   padding: 0 15%;
   flex-direction: column;
 
   & h1 {
-    color: $c-primary;
+    color: $c-primary-text;
     font-size: 4rem;
     margin: 7vh 0 1rem 0;
     @include textShadow;
@@ -27,13 +27,13 @@
     letter-spacing: 1px;
         
     & span:first-child{
-      color: $c-secondary;
+      color: $c-primary-text;
       animation: 0.5s bounceIn 1.2s ease backwards;
       display: inline-block;
       backface-visibility: hidden;
     }
     & span:last-child{
-      color: $c-secondary;
+      color: $c-primary-text;
       animation: 0.5s bounceIn 1.9s ease backwards;
       display: inline-block;
       backface-visibility: hidden;
@@ -41,8 +41,8 @@
   }
 
   &__button-link {
-    border: $c-primary 2px solid;
-    color: $c-secondary;
+    border: $c-secondary 2px solid;
+    color: $c-primary-text;
     padding: 0.5rem 0rem;
     border-radius: 1rem;
     font-size: 1.8rem;
@@ -54,7 +54,8 @@
       4.5s shake 4.5s infinite;
     
     &:hover, &:active {
-      background-color: $c-primary;
+      background-color: $c-secondary;
+      color: $c-secondary-text;
       letter-spacing: 2px;
     }
   }

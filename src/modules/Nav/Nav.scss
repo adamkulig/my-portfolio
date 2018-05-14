@@ -15,13 +15,13 @@
     width: 7rem;
     height: auto;
     border-radius: 10rem;
-    border: 2px solid $c-primary-light;
+    border: 3px solid $c-primary-light;
   }
 }
 .nav-menu {
   height: 100vh;
   width: 100%;
-  background-color: $c-primary-dark;
+  background-color: $c-menu;
   position: fixed;
   @include flexCenter;
   align-items: center;
@@ -43,7 +43,7 @@
       margin: 1rem;
       padding: 0.5rem 1.5rem;
       font-size: 2.4rem;
-      // @include textShadow;
+      @include textShadow;
       color: $c-primary-dark-text;
       position: relative;
       transition: all 1s;

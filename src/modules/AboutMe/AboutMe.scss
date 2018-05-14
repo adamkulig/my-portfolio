@@ -9,7 +9,7 @@
   }
 
   p {
-    @include pSection($c-background-text);
+    @include pSection($c-background-text-light);
   }
 }
 

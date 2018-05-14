@@ -4,19 +4,21 @@ $c-primary-light:#63a4ff;
 $c-primary-light-text:#05182b;
 $c-primary-dark:#004ba0;
 $c-primary-dark-text:#fff;
-$c-secondary:#ffeb3b;
-$c-secondary-light:#ffff72;
-$c-secondary-dark:#c8b900;
-$c-secondary-text:#0e0d00;
-$c-background:#fff;
-$c-background-primary:#bbdefb;
-$c-background-secondary:#fffde7;
-$c-background-text:#05182b;
-$c-placeholder:#666;
-$c-shadow:#333;
-$c-floor-fade: linear-gradient(
+
+$c-secondary:#e17d1b;
+$c-secondary-light:#ffad4e;
+$c-secondary-dark:#a95000;
+$c-secondary-text:#0d0702;
+$c-secondary-dark-text:#fff;
+
+$c-background-primary:#fff;
+$c-background-secondary:#E3F2FD;
+$c-background-text:#080808;
+$c-background-text-light:#444;
+$c-darken: linear-gradient(
   to bottom,
-  rgba(0,0,0,0),
-  rgba(0,0,0,0.6)
+  rgba(#004ba0,0.85),
+  rgba(#004ba0,0.85)
 );
-$c-hamburger: #64DD17;
+$c-hamburger: $c-secondary;
+$c-menu: $c-primary-light-text;
