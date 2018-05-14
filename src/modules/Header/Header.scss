@@ -2,7 +2,7 @@
 @import '../../scss/animations.scss';
 
 .header {
-  background-image: $c-floor-fade, url('../../images/background-big.jpeg');
+  background-image: $c-darken, url('../../images/background-big.jpeg');
   background-size: cover;
   background-position: center;
   height: 100vh;
