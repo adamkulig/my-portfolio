@@ -45,7 +45,7 @@ export const Skills = () => {
           </div>
           <div className='skills__details__detail'>
             <h3 className='skills__details__h3'>Precise</h3>
-            <p className='skills__details__p'>I am a precision person, I pay special attention to symmetries and details.</p>
+            <p className='skills__details__p'>I am a precise person, I pay special attention to symmetries and details.</p>
           </div>
           <div className='skills__details__detail'>
             <h3 className='skills__details__h3'>Modern positioning</h3>
