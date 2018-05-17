@@ -40,9 +40,15 @@
     width: calc(100% - 2rem);
     @include boxShadow;
   }
-  &__text-under-img {
-    @include h3Section($c-background-text-light)
+  &__title {
+    @include h3Section($c-background-text)
   }
+  &__technologies {
+    @include h4Section($c-background-text-light);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
   &__buttons {
     display: flex;
     justify-content: center;
