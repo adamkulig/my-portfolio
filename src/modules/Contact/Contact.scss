@@ -9,7 +9,7 @@
   }
 
   &__message {
-    @include h3Section($c-background-text);
+    @include pSection($c-background-text-light);
   }
 
   &__contacts {
@@ -18,8 +18,8 @@
     text-align: center;
     &__single {
       margin: 0.5rem 0;
-      color: $c-background-text;
-      font-size: 1.8rem;
+      color: $c-background-text-light;
+      font-size: 1.5rem;
       word-spacing: 1px;
       font-weight: bold;
       &__icon {
@@ -38,26 +38,27 @@
       color: $c-background-text;
       &__icon {
         @include iconParams;
+        @include boxShadow;
         transition: 0.2s;
         &:hover, &:active {
           transform: scale(1.1);
         }
         &.FaGithub {
-          color: $c-background;
+          color: $c-background-primary;
           background-color: $c-background-text;
           
         }
         &.FaFacebook {
-          color: $c-background;
+          color: $c-background-primary;
           background-color: #3b5998;
         }
         &.FaAngleDoubleUp {
           color: $c-background-text;
           border: 2px solid $c-background-text;
-          background-color: $c-background;
+          background-color: $c-background-primary;
           &:hover, &:active {
             background-color: $c-background-text;
-            color: $c-background;
+            color: $c-background-primary;
           }
         }
       }
