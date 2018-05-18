@@ -2,11 +2,12 @@ import React from 'react';
 import './Portfolio.scss';
 
 export const PortfolioItem = (props) => {
-  const { src, alt, linkToLive, linkToCode, text } = props;
+  const { src, alt, linkToLive, linkToCode, title, tech } = props;
   return (
     <div className='portfolio-item'>
       <img className='portfolio-item__img' src={src} alt={alt} />
-      <span className='portfolio-item__text-under-img'>{text}</span>
+      <span className='portfolio-item__title'>{title}</span>
+      <span className='portfolio-item__technologies'>{tech}</span>
       <div className='portfolio-item__buttons'>
         <a 
           className='portfolio-item__buttons__link portfolio-item__buttons__link--live' 

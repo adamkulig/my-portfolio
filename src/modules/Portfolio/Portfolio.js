@@ -19,13 +19,17 @@ export const Portfolio = () => {
             alt='piggame screen'
             linkToLive={piggame_link_live}
             linkToCode={piggame_link_code}
-            text='React Pig Game'/>
+            title='Pig Game'
+            tech='Technologies: React.js, SCSS, ES6'
+          />
           <PortfolioItem 
             src={todoapp}
             alt='todo screen'
             linkToLive={todo_link_live}
             linkToCode={todo_link_code}
-            text='React To Do'/>
+            title='To Do'
+            tech='Technologies: React.js, SCSS, ES6'
+          />
          </div>
       </section>
     </ScrollableAnchor>

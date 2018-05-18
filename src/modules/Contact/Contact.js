@@ -14,7 +14,7 @@ export const Contact = () => {
         <a href='#contact'>
           <h1 className='contact__h1'>Contact</h1>
         </a>
-        <h3 className='contact__message'>If you have any questions or would like to see my CV let me know!</h3>
+        <p className='contact__message'>If you have any questions or would like to see my CV let me know!</p>
         <div className='contact__contacts'>
           <SingleContact
             text='+48 660 395 550'
