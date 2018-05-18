@@ -44,7 +44,7 @@ export const Skills = () => {
           />
           <SingleSkill 
             heading='ECMAScript 6'
-            text='When I write javascript code, I use only ES6 syntax.'
+            text='When I write javascript code, I use ES6 syntax only.'
           />
           <SingleSkill 
             heading='RWD'
