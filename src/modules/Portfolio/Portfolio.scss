@@ -27,7 +27,7 @@
   background-color: $c-background-secondary;
   @include boxShadow;
   @include media('min900') {
-    max-width: calc(50% - 2rem);
+    width: calc(50% - 2rem);
   }
   &:nth-child(odd) {
     @include media('min900') {
@@ -39,6 +39,11 @@
     margin: 1rem;
     width: calc(100% - 2rem);
     @include boxShadow;
+    &--vertical {
+      max-height: 30rem;
+      margin: 1rem auto;
+      width: auto;
+    }
   }
   &__title {
     @include h3Section($c-background-text)

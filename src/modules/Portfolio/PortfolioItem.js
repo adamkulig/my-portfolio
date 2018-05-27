@@ -1,11 +1,16 @@
 import React from 'react';
+import classNames from 'classnames';
 import './Portfolio.scss';
 
 export const PortfolioItem = (props) => {
-  const { src, alt, linkToLive, linkToCode, title, tech } = props;
+  const { src, vertical, alt, linkToLive, linkToCode, title, tech } = props;
   return (
     <div className='portfolio-item'>
-      <img className='portfolio-item__img' src={src} alt={alt} />
+      <img 
+        className={classNames('portfolio-item__img', vertical && 'portfolio-item__img--vertical')}
+        src={src}
+        alt={alt}
+      />
       <span className='portfolio-item__title'>{title}</span>
       <span className='portfolio-item__technologies'>{tech}</span>
       <div className='portfolio-item__buttons'>

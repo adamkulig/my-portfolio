@@ -4,3 +4,5 @@ export const piggame_link_live = 'https://adamkulig.github.io/pig-game-react/';
 export const piggame_link_code = 'https://github.com/adamkulig/pig-game-react';
 export const todo_link_live = 'https://adamkulig.github.io/todo-react/';
 export const todo_link_code = 'https://github.com/adamkulig/todo-react';
+export const recipes_link_live = '#';
+export const recipes_link_code = 'https://github.com/adamkulig/recipes-search-engine-react-redux';
