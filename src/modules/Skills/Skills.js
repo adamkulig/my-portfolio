@@ -31,16 +31,12 @@ export const Skills = () => {
         </div>
         <div className='skills__details'>
           <SingleSkill 
-            heading='REACT.JS'
-            text='My main goal is to learn React so all my projects I do using this framework. I also learn Redux to keep my state out of components.'
-          />
-          <SingleSkill 
-            heading='Clean code'
-            text='I try to write clean code so that it is understandable for every programmer.'
+            heading='React.js + Redux'
+            text='My main goal is to learn React so all my projects I do using this framework. I also use Redux to keep my state out of components.'
           />
           <SingleSkill 
             heading='Styling'
-            text='I only style using preprocesor SASS exactly the SCSS syntax.'
+            text='I only style using preprocesors like SASS exactly the SCSS syntax. I also use CSS frameworks like Reactstrap or Material UI.'
           />
           <SingleSkill 
             heading='ECMAScript 6'
@@ -49,6 +45,10 @@ export const Skills = () => {
           <SingleSkill 
             heading='RWD'
             text='I make websites and applications fully responsive.'
+          />
+          <SingleSkill 
+            heading='Clean code'
+            text='I try to write clean code so that it is understandable for every programmer.'
           />
           <SingleSkill 
             heading='BEM'
@@ -60,7 +60,7 @@ export const Skills = () => {
           />
           <SingleSkill 
             heading='Modern positioning'
-            text='When positioning elements, I always use flexbox. I also learn CSS Grid.'
+            text='When positioning elements, I always use flexbox or CSS Grid.'
           />
           <SingleSkill 
             heading='HTML 5'
