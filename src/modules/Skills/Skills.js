@@ -40,7 +40,7 @@ export const Skills = () => {
           />
           <SingleSkill 
             heading='ECMAScript 6'
-            text='When I write javascript code, I use ES6 syntax only.'
+            text='When I write javascript code, I use ES6 and newer syntax only.'
           />
           <SingleSkill 
             heading='RWD'
@@ -57,14 +57,6 @@ export const Skills = () => {
           <SingleSkill 
             heading='Precise'
             text='I am a precise person, I pay special attention to symmetries and details.'
-          />
-          <SingleSkill 
-            heading='Modern positioning'
-            text='When positioning elements, I always use flexbox or CSS Grid.'
-          />
-          <SingleSkill 
-            heading='HTML 5'
-            text='I use only semantic tags in HTML code.'
           />
           <SingleSkill 
             heading='Git'
