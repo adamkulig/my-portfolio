@@ -1,7 +1,9 @@
-Simple portfolio site 
+My third project with React.js.
 
--create-react-app
--React.js
--SCSS
--Javascript (ES6)
--RWD
+It's simple portfolio site
+
+I used:
+- Create-react-app
+- React.js
+- SCSS (RWD)
+- Javascript (ES6)

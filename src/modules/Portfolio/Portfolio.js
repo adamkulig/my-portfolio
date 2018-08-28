@@ -3,9 +3,10 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import './Portfolio.scss';
 import { PortfolioItem } from './PortfolioItem';
 import piggame from '../../images/piggame.png';
-import todoapp from '../../images/todoapp.png';
+import todoapp from '../../images/todoapp2.png';
 import recipes from '../../images/recipes2.png';
 import memory from '../../images/memory.png';
+import grid from '../../images/my-grid.png';
 import { 
   piggame_link_live, 
   piggame_link_code, 
@@ -32,7 +33,7 @@ export const Portfolio = () => {
             linkToLive={recipes_link_live}
             linkToCode={recipes_link_code}
             title='Recipes Search Engine'
-            tech='Technologies: React.js, Redux, SCSS, ES6, React Router, Redux-thunk'
+            tech='Technologies: React.js, Redux, SCSS, ES6, React-router, Redux-thunk'
           />
           <PortfolioItem 
             src={memory}
@@ -41,11 +42,20 @@ export const Portfolio = () => {
             linkToLive={memory_link_live}
             linkToCode={memory_link_code}
             title='Memory Game'
-            tech='Technologies: React.js, Redux, Reactstrap, SCSS, ES6, React Router'
+            tech='Technologies: React.js, Redux, Reactstrap, SCSS, ES6, React-router'
+          />
+          <PortfolioItem 
+            src={grid}
+            vertical={true}
+            alt='grid screen'
+            linkToLive={grid_link_live}
+            linkToCode={grid_link_code}
+            title='My own 24 column, RWD, mobile-first grid'
+            tech='Technologies: React.js, SCSS, ES6'
           />
           <PortfolioItem 
             src={todoapp}
-            vertical={false}
+            vertical={true}
             alt='todo screen'
             linkToLive={todo_link_live}
             linkToCode={todo_link_code}

@@ -9,3 +9,5 @@ export const recipes_link_live = 'https://adamkulig.github.io/recipes-search-eng
 export const recipes_link_code = 'https://github.com/adamkulig/recipes-search-engine-react-redux';
 export const memory_link_live = 'https://adamkulig.github.io/memory-game-react-redux/';
 export const memory_link_code = 'https://github.com/adamkulig/memory-game-react-redux';
+export const grid_link_live = 'https://adamkulig.github.io/my-grid-react/';
+export const grid_link_code = 'https://github.com/adamkulig/my-grid-react';
