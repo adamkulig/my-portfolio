@@ -15,7 +15,9 @@ import {
   recipes_link_live, 
   recipes_link_code,
   memory_link_live,
-  memory_link_code 
+  memory_link_code,
+  grid_link_live,
+  grid_link_code
 } from '../../links/links';
 
 export const Portfolio = () => {
@@ -50,7 +52,7 @@ export const Portfolio = () => {
             alt='grid screen'
             linkToLive={grid_link_live}
             linkToCode={grid_link_code}
-            title='My own 24 column, RWD, mobile-first grid'
+            title='My 24 column, mobile-first grid'
             tech='Technologies: React.js, SCSS, ES6'
           />
           <PortfolioItem 
