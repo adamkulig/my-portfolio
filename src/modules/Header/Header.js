@@ -9,9 +9,9 @@ export const Header = () => {
         <h1>Hi there!</h1>
           <h2>
             <span>My name is Adam and</span><br />
-            <span>I will be a great<br />front-end developer!</span>
+            <span>I'm front-end developer.</span>
           </h2>
-        <a href='#aboutme' className='header__button-link'>What?!<br />Show me more!</a>
+        <a href='#aboutme' className='header__button-link'>Show me more!</a>
       </header>
     </ScrollableAnchor>
   )
