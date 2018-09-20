@@ -12,7 +12,7 @@ class NavMobile extends Component {
     }
   }
 
-  showMenu = () => {
+  toggleMenu = () => {
     this.setState({
       menuIsOpen: !this.state.menuIsOpen
     })
@@ -22,9 +22,9 @@ class NavMobile extends Component {
     const isOpen = this.state.menuIsOpen;
     return (
       <React.Fragment>
-        <NavBurger onClick={this.showMenu} isOpen={isOpen} />
+        <NavBurger onClick={this.toggleMenu} isOpen={isOpen} />
         <div className={classNames('nav__menu', isOpen && 'nav__menu--open')}>
-          <NavList mobileView />
+          <NavList mobileView toggleMenu={this.toggleMenu}/>
         </div>
       </React.Fragment>
     )
