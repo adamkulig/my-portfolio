@@ -28,7 +28,7 @@ export class Nav extends Component {
           <nav className='nav-menu__list'>
             <NavItem onClick={this.showMenu} link='#aboutme' text='About me' icon={<FaInfoCircle />} classIcon='FaInfoCircle'/>
             <NavItem onClick={this.showMenu} link='#skills' text='My skills' icon={<FaWrench />} classIcon='FaWrench'/>
-            <NavItem onClick={this.showMenu} link='#portfolio' text='Porfolio' icon={<FaDesktop />} classIcon='FaDesktop'/>
+            <NavItem onClick={this.showMenu} link='#portfolio' text='Portfolio' icon={<FaDesktop />} classIcon='FaDesktop'/>
             <NavItem onClick={this.showMenu} link='#contact' text='Contact' icon={<FaEnvelopeO />} classIcon='FaEnvelopeO'/>
           </nav>
         </div>
