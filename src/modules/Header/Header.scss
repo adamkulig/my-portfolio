@@ -8,19 +8,17 @@
   @include flexCenter;
   padding: 0 15%;
   flex-direction: column;
-
   & h1 {
     color: $c-primary-text;
-    font-size: 4rem;
-    margin: 7vh 0 1rem 0;
+    font-size: 3rem;
+    margin: 2vh 0 1rem 0;
     @include textShadow;
     animation: 0.5s bounceIn 0.5s ease backwards;
     letter-spacing: 2px;
   }
-
   & h2 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 1rem 0 7vh 0;
     @include textShadow;
     letter-spacing: 1px;

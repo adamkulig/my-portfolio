@@ -1,7 +1,7 @@
 @import '../../../scss/base.scss';
 
 .nav-list__item {
-  padding: 4px 10px;
+  padding: 6px 10px;
   font-size: 16px;
   @include textShadow;
   color: $c-primary-dark-text;
