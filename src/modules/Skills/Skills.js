@@ -1,8 +1,8 @@
 import React from 'react';
 import './Skills.scss';
-import { SingleSkill } from './SingleSkill';
+import SingleSkill from './SingleSkill';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import { Logo } from './Logo'
+import Logo from './Logo'
 import HTML5_logo from '../../images/HTML5_logo.png';
 import CSS3_logo from '../../images/CSS3_logo.png';
 import JS_logo from '../../images/JS_logo.png';
@@ -10,7 +10,7 @@ import React_logo from '../../images/React_logo.png';
 import Redux_logo from'../../images/Redux_logo.png';
 import Sass_logo from '../../images/Sass_logo.png';
 
-export const Skills = () => {
+const Skills = () => {
   return (
     <ScrollableAnchor id={'skills'}>
       <section className='skills'>
@@ -68,3 +68,4 @@ export const Skills = () => {
     
   )
 }
+export default Skills;

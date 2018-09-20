@@ -2,9 +2,9 @@ import React from 'react';
 import classNames from 'classnames';
 import './NavBurger.scss';
 
-export const NavBurger = (props) => {
+const NavBurger = (props) => {
   return (
-    <div className={classNames('nav__burger', props.openClass)} onClick={props.onClick}>
+    <div className={classNames('nav__burger', props.isOpen && 'nav__burger--open')} onClick={props.onClick}>
       <span></span>
       <span></span>
       <span></span>
@@ -12,3 +12,4 @@ export const NavBurger = (props) => {
     </div>
   )
 }
+export default NavBurger;

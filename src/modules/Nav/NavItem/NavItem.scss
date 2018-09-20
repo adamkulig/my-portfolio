@@ -1,0 +1,25 @@
+@import '../../../scss/base.scss';
+
+.nav-list__item {
+  padding: 4px 10px;
+  font-size: 16px;
+  @include textShadow;
+  color: $c-primary-dark-text;
+  position: relative;
+  transition: all 0.5s;
+  display: flex;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  &:hover,
+  &:active {
+    color: $c-secondary;
+  }
+  &__icon {
+    margin-right: 8px;
+    color: $c-secondary;
+    position: relative;
+    top: -1px;
+    &.FaDesktop {top: 0px;}
+    &.FaInfoCircle {top: -1px;}
+  }
+}

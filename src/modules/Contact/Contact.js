@@ -1,13 +1,12 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import { FaEnvelopeO, FaPhone, FaGithub, FaFacebook, FaAngleDoubleUp, FaLinkedin } from 'react-icons/lib/fa'
+import { FaEnvelopeO, FaPhone, FaGithub, FaFacebook, FaLinkedin } from 'react-icons/lib/fa'
 import './Contact.scss';
 import { fb_link, github_link, linkedin_link } from '../../links/links';
-import { SingleContact } from './SingleContact';
-import { SingleLink } from './SingleLink';
-import { SingleOutsideLink } from './SingleOutsideLink';
+import SingleContact from './SingleContact';
+import SingleOutsideLink from './SingleOutsideLink';
 
-export const Contact = () => {
+const Contact = () => {
   return (
     <ScrollableAnchor id={'contact'}>
       <section className='contact'>
@@ -39,13 +38,8 @@ export const Contact = () => {
             classIcon='FaLinkedin'
             link={linkedin_link}/>
         </div>
-        <div className='contact__links'>
-          <SingleLink
-            icon={<FaAngleDoubleUp />} 
-            classIcon='FaAngleDoubleUp'
-            link='#header'/>
-        </div>
       </section>
     </ScrollableAnchor>
   )
 }
+export default Contact;

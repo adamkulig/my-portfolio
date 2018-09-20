@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import './Portfolio.scss';
-import { PortfolioItem } from './PortfolioItem';
+import PortfolioItem from './PortfolioItem';
 import piggame from '../../images/piggame.png';
 import todoapp from '../../images/todoapp2.png';
 import recipes from '../../images/recipes2.png';
@@ -20,7 +20,7 @@ import {
   grid_link_code
 } from '../../links/links';
 
-export const Portfolio = () => {
+const Portfolio = () => {
   return (
     <ScrollableAnchor id={'portfolio'}>
       <section className='portfolio'>
@@ -78,3 +78,4 @@ export const Portfolio = () => {
     </ScrollableAnchor>
   )
 }
+export default Portfolio;

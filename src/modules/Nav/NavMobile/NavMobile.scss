@@ -1,0 +1,15 @@
+@import '../../../scss/base.scss';
+
+.nav__menu {
+  width: 100%;
+  background-color: $c-menu;
+  position: fixed;
+  top: 50px;
+  padding: 4px 0;
+  transform: translateY(-150%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  z-index: 10;
+  &--open {
+    transform: translateY(0);
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skills.scss';
 
-export const SingleSkill = (props) => {
+const SingleSkill = (props) => {
   const { heading, text } = props;
   return (
     <div className='skills__details__detail'>
@@ -10,3 +10,4 @@ export const SingleSkill = (props) => {
     </div>
   )
 }
+export default SingleSkill;

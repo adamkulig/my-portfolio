@@ -1,0 +1,10 @@
+@import '../../../scss/base.scss';
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  &--mobile {
+    flex-direction: column;
+  }
+}

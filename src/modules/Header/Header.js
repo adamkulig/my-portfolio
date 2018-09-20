@@ -2,7 +2,7 @@ import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import './Header.scss';
 
-export const Header = () => {
+const Header = () => {
   return (
     <ScrollableAnchor id={'header'}>
       <header className='header'>
@@ -16,3 +16,4 @@ export const Header = () => {
     </ScrollableAnchor>
   )
 }
+export default Header;

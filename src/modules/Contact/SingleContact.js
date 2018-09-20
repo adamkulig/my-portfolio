@@ -2,7 +2,7 @@ import React from 'react';
 import './Contact.scss';
 import classNames from 'classnames';
 
-export const SingleContact = (props) => {
+const SingleContact = (props) => {
   const { icon, text, classIcon } = props;
   return (
     <div className='contact__contacts__single'>
@@ -11,3 +11,4 @@ export const SingleContact = (props) => {
     </div>
   )
 }
+export default SingleContact

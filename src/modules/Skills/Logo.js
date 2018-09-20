@@ -2,7 +2,7 @@ import React from 'react';
 import './Skills.scss';
 import classNames from 'classnames';
 
-export const Logo = (props) => {
+const Logo = (props) => {
   return (
     <img 
       src={props.logo} 
@@ -10,3 +10,5 @@ export const Logo = (props) => {
       className={classNames('skills__logos__img', props.name)}/>
   )
 }
+
+export default Logo;

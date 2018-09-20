@@ -1,5 +1,4 @@
 @import '../../scss/base.scss';
-@import '../../scss/animations.scss';
 
 .header {
   background-image: $c-darken, url('../../images/website-3374825.jpg');
@@ -26,13 +25,13 @@
     @include textShadow;
     letter-spacing: 1px;
         
-    & span:first-child{
+    & span:first-child {
       color: $c-primary-text;
       animation: 0.5s bounceIn 1.2s ease backwards;
       display: inline-block;
       backface-visibility: hidden;
     }
-    & span:last-child{
+    & span:last-child {
       color: $c-primary-text;
       animation: 0.5s bounceIn 1.9s ease backwards;
       display: inline-block;

@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import './Portfolio.scss';
 
-export const PortfolioItem = (props) => {
+const PortfolioItem = (props) => {
   const { src, vertical, alt, linkToLive, linkToCode, title, tech } = props;
   return (
     <div className='portfolio-item'>
@@ -27,3 +27,4 @@ export const PortfolioItem = (props) => {
     </div>   
   )
 }
+export default PortfolioItem;

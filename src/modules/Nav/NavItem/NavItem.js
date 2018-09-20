@@ -1,5 +1,5 @@
 import React from 'react';
-import './Nav.scss';
+import './NavItem.scss';
 import classNames from 'classnames';
 
 export const NavItem = (props) => {
@@ -8,8 +8,8 @@ export const NavItem = (props) => {
     <a 
       href={link}
       onClick={onClick}
-      className='nav-menu__list__item'>
-      <i className={classNames('nav-menu__list__item__icon', classIcon)}>{icon}</i>
+      className='nav-list__item'>
+      <i className={classNames('nav-list__item__icon', classIcon)}>{icon}</i>
       <span>{text}</span>
     </a>
   )

@@ -2,13 +2,12 @@
 
 .aboutme {
   background-color: $c-background-primary;
-
   &__h1 {
     @include h1Section($c-background-text);
     @include underline($c-primary-dark, 1rem);
   }
   &__text {
-    @include media('min900') {
+    @include media('md') {
       padding: 0 15%;
     }
   }
@@ -16,4 +15,3 @@
     @include pSection($c-background-text-light);
   }
 }
-

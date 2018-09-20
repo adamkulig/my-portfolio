@@ -2,13 +2,10 @@
 
 .skills {
   background-color: $c-background-secondary;
-  padding: 3rem 10%;
-
   &__h1 {
     @include h1Section($c-background-text);
     @include underline($c-primary-dark, 1rem);
   }
-
   &__logos {
     display: flex;
     justify-content: space-around;
@@ -44,7 +41,7 @@
       border-radius: 0.2rem;
       @include boxShadow;
     }
-    @include media(min900) {
+    @include media(md) {
       flex-direction: row;
       flex-wrap: wrap;
       &__detail {

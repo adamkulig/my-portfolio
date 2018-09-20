@@ -2,16 +2,13 @@
 
 .contact {
   background-color: $c-background-secondary;
-
   &__h1 {
     @include h1Section($c-background-text);
     @include underline($c-primary-dark, 1rem);
   }
-
   &__message {
     @include pSection($c-background-text-light);
   }
-
   &__contacts {
     display: flex;
     flex-direction: column;

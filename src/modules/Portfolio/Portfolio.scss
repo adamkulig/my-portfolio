@@ -13,7 +13,7 @@
   &__projects {
     display: flex;
     flex-direction: column;
-    @include media('min900') {
+    @include media('md') {
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -27,11 +27,11 @@
   padding: 2px;
   background-color: $c-background-secondary;
   @include boxShadow;
-  @include media('min900') {
+  @include media('md') {
     width: calc(50% - 2rem);
   }
   &:nth-child(odd) {
-    @include media('min900') {
+    @include media('md') {
       margin-right: 2rem;
     }
   }

@@ -1,3 +1,36 @@
+$breakpoint-xs: 0px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+@mixin media($breakpoint) {
+  @if $breakpoint == 'xs' {
+    @media only screen and (min-width: $breakpoint-xs) {@content};
+  }
+  @if $breakpoint == 'sm' {
+    @media only screen and (min-width: $breakpoint-sm) {@content};
+  }
+  @if $breakpoint == 'sml' {
+    @media only screen and (min-width: $breakpoint-sm) and (orientation:landscape) {@content};
+  }
+  @if $breakpoint == 'md' {
+    @media only screen and (min-width: $breakpoint-md) {@content};
+  }
+  @if $breakpoint == 'mdl' {
+    @media only screen and (min-width: $breakpoint-md) and (orientation:landscape) {@content};
+  }
+  @if $breakpoint == 'lg' {
+    @media only screen and (min-width: $breakpoint-lg) {@content};
+  }
+  @if $breakpoint == 'lgl' {
+    @media only screen and (min-width: $breakpoint-lg) and (orientation:landscape) {@content};
+  }
+  @if $breakpoint == 'xl' {
+    @media only screen and (min-width: $breakpoint-xl) {@content};
+  }
+}
+
 @mixin flexCenter {
   display: flex;
   justify-content: center;
@@ -84,26 +117,4 @@
   color: $fontColor;
   line-height: 2.2rem;
   font-weight: bold;
-}
-
-//mixin of media queries
-@mixin media($breakpoint) {
-  @if $breakpoint == 'portrait' {
-    @media only screen and (orientation:portrait) {@content};
-  }
-  @if $breakpoint == 'min600landscape' {
-    @media only screen and (min-width:600px) and (orientation:landscape) {@content};
-  }
-  @if $breakpoint == 'min600portrait' {
-    @media only screen and (min-width:600px) and (orientation:portrait) {@content};
-  }
-  @if $breakpoint == 'min900' {
-    @media only screen and (min-width:900px) {@content};
-  }
-  @if $breakpoint == 'min900landscape' {
-    @media only screen and (min-width:900px) and (orientation:landscape) {@content};
-  }
-  @if $breakpoint == 'min1200' {
-    @media only screen and (min-width:1200px) {@content};
-  }
 }

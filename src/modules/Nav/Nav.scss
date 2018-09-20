@@ -1,86 +1,21 @@
 @import '../../scss/base.scss';
 
 .nav {
-  &__icon {
-    cursor: pointer;
-    padding: 0.5rem;
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 20;
-  }
-
-  &__author {
-    @include absolute(0.5rem, 0.5rem);
-    width: 7rem;
-    height: auto;
-    border-radius: 10rem;
-    border: 3px solid $c-secondary;
-  }
-}
-.nav-menu {
-  height: 100vh;
   width: 100%;
-  background-color: $c-menu;
   position: fixed;
-  @include flexCenter;
-  align-items: center;
-  transform: translate(100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  height: 50px;
+  background-color: $c-navbar;
   z-index: 10;
-  
-  &--open {
-    transform: none;
-  }
-
-  &__list {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &__item {
-      margin: 1rem;
-      padding: 0.5rem 1.5rem;
-      font-size: 2.4rem;
-      @include textShadow;
-      color: $c-primary-dark-text;
-      position: relative;
-      transition: all 1s;
-      display: flex;
-      vertical-align: middle;
-      letter-spacing: 2px;
-      &:hover,
-      &:active {
-        color: $c-secondary;
-        letter-spacing: 4px;
-      }
-      
-      &__icon {
-        margin-right: 1.5rem;
-        color: $c-secondary;
-        position: relative;
-        top: -3px;
-        &.FaDesktop {top: -1px;}
-        &.FaInfoCircle {top: -2px;}
-        
-      }
-
-
-      &:before {
-        content: "";
-        position: absolute;
-        transition: transform .5s ease;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 3px;
-        background: $c-primary-light;
-        transform:  scaleX(0);
-      }
-      &:hover:before {
-        transform:  scaleX(1);
-      }
+  display: flex;
+  justify-content: flex-end;
+  &__author {
+    @include absolute(5px, 0.5rem);
+    width: 42px;
+    height: auto;
+    border-radius: 5px;
+    transition: filter 0.3s;
+    &:hover {
+      filter: brightness(80%);
     }
   }
 }
