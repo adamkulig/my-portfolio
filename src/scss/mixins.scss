@@ -106,6 +106,14 @@ $breakpoint-xl: 1200px;
   text-align: center;
   margin: 0.3rem 0;
   color: $fontColor;
+  font-weight: bold;
+}
+
+@mixin h5Section($fontColor) {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.3rem 0;
+  color: $fontColor;
   font-weight: normal;
 }
 

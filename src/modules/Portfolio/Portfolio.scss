@@ -47,10 +47,10 @@
     }
   }
   &__title {
-    @include h3Section($c-background-text)
+    @include h4Section($c-background-text)
   }
   &__technologies {
-    @include h4Section($c-background-text-light);
+    @include h5Section($c-background-text-light);
     margin-top: 0;
     margin-bottom: 1rem;
   }

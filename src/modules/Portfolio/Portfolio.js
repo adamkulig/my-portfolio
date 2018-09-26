@@ -29,22 +29,22 @@ const Portfolio = () => {
         </a>
         <div className='portfolio__projects'>
           <PortfolioItem 
-            src={recipes}
-            vertical={true}
-            alt='recipes screen'
-            linkToLive={recipes_link_live}
-            linkToCode={recipes_link_code}
-            title='Recipes Search Engine'
-            tech='Technologies: React.js, Redux, SCSS, ES6, React-router, Redux-thunk'
-          />
-          <PortfolioItem 
             src={memory}
             vertical={true}
             alt='memory screen'
             linkToLive={memory_link_live}
             linkToCode={memory_link_code}
             title='Memory Game'
-            tech='Technologies: React.js, Redux, Reactstrap, SCSS, ES6, React-router'
+            tech='Technologies: React.js, Redux, React-router, Redux-thunk, Reactstrap, SCSS, ES6'
+          />
+          <PortfolioItem 
+            src={recipes}
+            vertical={true}
+            alt='recipes screen'
+            linkToLive={recipes_link_live}
+            linkToCode={recipes_link_code}
+            title='Recipes Search Engine'
+            tech='Technologies: React.js, Redux, React-router, Redux-thunk, SCSS, ES6'
           />
           <PortfolioItem 
             src={grid}
